@@ -1,3 +1,3 @@
 # My-Scripts
 
-Just put the script I created there.
+This is just a place to put the scripts I've made.
