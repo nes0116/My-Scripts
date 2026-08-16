@@ -5,6 +5,8 @@
 Extract `content.zip`, then simply drag and drop the `content` folder into your VS IMPOSTOR LEGACY directory.
 
 **NOTE: This Mod Pack requires these scripts to work! (It’s already included in `content.zip`, so you can just place it as-is.)**
+- Script Loader
+- Multiple Script Loader
 
 ### Features
 
