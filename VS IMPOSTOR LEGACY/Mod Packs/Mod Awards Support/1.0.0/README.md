@@ -2,7 +2,7 @@
 ## Recommended Engine Version
 1.1.2
 ### How to install
-Extract `content.zip`, then simply drag and drop the `content` folder into your VS IMPOSTOR LEGACY directory.
+Extract `content.zip`, then simply drag and drop the `./content/` folder into your VS IMPOSTOR LEGACY directory.
 
 **NOTE: This Mod Pack requires these scripts to work! (It’s already included in `content.zip`, so you can just place it as-is.)**
 - [Script Loader](https://raw.githubusercontent.com/nes0116/My-Scripts/refs/heads/main/VS%20IMPOSTOR%20LEGACY/Plugins/Script%20Loader/scriptLoader.hx)
