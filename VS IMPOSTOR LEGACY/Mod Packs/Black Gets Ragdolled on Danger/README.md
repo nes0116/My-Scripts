@@ -4,4 +4,4 @@
 ### How to install
 Just place the extracted folder into `./content/`.
 ## Features
-...
+I stayed up all night writing this script you asshole.
