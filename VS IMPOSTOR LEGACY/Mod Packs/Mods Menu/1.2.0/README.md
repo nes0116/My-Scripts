@@ -13,7 +13,7 @@ The days of being unable to toggle Mod activation are over!
 
 With this Mods Menu, you can freely change Mod activation and the order of your Mods!
 
-I didn't include this in the guide below, but you can change the order of Mods by control key.
+**I didn't include this in the guide below, but you can change the order of Mods by control key.**
 
 I'm still not very familiar with coding for this engine, so there may be some bugs.
 
