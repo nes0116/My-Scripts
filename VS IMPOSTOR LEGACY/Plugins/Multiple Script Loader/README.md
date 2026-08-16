@@ -1,4 +1,6 @@
 ### Multiple Script Loader
+## Recommended Engine Version
+1.1.2
 ## Features
 It allows multiple scripts to be executed in the current State.
 
