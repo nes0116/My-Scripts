@@ -1,56 +1,22 @@
+import Reflect;
 import Type;
 import funkin.FunkinAssets;
 import funkin.Mods;
 import funkin.backend.Logger;
 import funkin.scripting.PluginsManager;
 
-/**
-	## ステートに複数のスクリプトを自動で実行できるようになるプラグイン
-
-	このプラグインを動作させるには別プラグイン、`scriptLoader.hx`が必要です！
-
-	現時点ではステートに複数のプラグインを実行する機能が実装されていないため、このプラグインを作りました。
-
-	(`assets/scripts/states/MainMenuState.hx`と`content/scripts/states/MainMenuState.hx`が同時に実行されない、など)
-
-	`content/scripts/plugins/`にこのスクリプトを入れることで、ステートに複数のプラグインを自動で実行できるようになります。
-
-	例えば、`MainMenuState`で実行するスクリプトを増やしたい場合、`content/YourModName/scripts/MainMenuState/script.hx`のようにスクリプトを作成すると、
-
-	そのスクリプトがステートに追加されるようになります。
-
-	一応`ScriptedState`でも使用可能です。
-
-	(`content/YourModName/scripts/YourStateName/script.hx`)
-
-	## Plugin that allows multiple scripts to be automatically executed in a state
-
-	This plugin requires another plugin, `scriptLoader.hx` in order to function!
-
-	Currently, there is no built-in functionality to execute multiple scripts in a state, so I created this plugin.
-
-	For example, `assets/scripts/states/MainMenuState.hx` and `content/scripts/states/MainMenuState.hx` cannot be executed at the same time.
-
-	By placing this script in `content/scripts/plugins/`, you can automatically execute multiple scripts in a state.
-
-	For example, if you want to add more scripts to `MainMenuState`, you can create a script at:
-
-	`content/YourModName/scripts/MainMenuState/script.hx`
-
-	The script will then be automatically added to the state.
-
-	This plugin can also be used with `ScriptedState`.
-
-	For example:
-
-	`content/YourModName/scripts/YourStateName/script.hx`
-**/
-function description() {}
-
 var activeScriptedState:Bool = false;
 
 function onStateCreate() {
-	if (!FunkinAssets.exists('content/scripts/plugins/scriptLoader.hx')) {
+	var missingScriptLoader:Bool = true;
+	for (plugin in PluginsManager.loadedScripts.members) {
+		if (StringTools.startsWith(plugin.name, 'scriptLoader')) {
+			missingScriptLoader = false;
+			break;
+		}
+	}
+
+	if (missingScriptLoader) {
 		Logger.log('[MUTIPLESCRIPTLOADER] This plugin requires another plugin, scriptLoader.hx in order to function!', 2, true);
 		return;
 	}

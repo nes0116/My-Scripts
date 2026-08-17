@@ -1,6 +1,12 @@
 ### Multiple Script Loader
 ## Recommended Engine Version
 1.1.2
+## Update History
+### 1.0.1
+- Plugins now work even when placed in the Mods Pack's directory.
+  - This prevents the following error message from appearing.
+    **[MUTIPLESCRIPTLOADER] This plugin requires another plugin, scriptLoader.hx in order to function!**
+
 ## Features
 It allows multiple scripts to be executed in the current State.
 
