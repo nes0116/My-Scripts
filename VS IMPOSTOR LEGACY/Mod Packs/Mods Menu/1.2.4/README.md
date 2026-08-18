@@ -1,6 +1,6 @@
 ## Mods Menu 1.2.1 for VS IMPOSTOR LEGACY!! :33
 ## Change Log
-- Only changed how the plugin handles things, so there’s no difference from 1.2.3😂
+- The required plugins will now be automatically saved to `./content/scripts/contents/`.
 ## Recommended Engine Version
 1.1.2
 ## How to install
