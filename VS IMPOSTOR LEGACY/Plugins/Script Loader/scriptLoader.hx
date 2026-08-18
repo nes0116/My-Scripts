@@ -4,11 +4,9 @@ import funkin.backend.Logger;
 import funkin.scripting.PluginsManager;
 
 function onLoad() {
-    for (script in PluginsManager.loadedScripts.members) {
-		if (StringTools.startsWith(script.name, 'scriptLoader_')) {
-			PluginsManager.loadedScripts.members.remove(script);
-			script.destroy();
-		}
+    if (StringTools.startsWith(script.name, 'scriptLoader_')) {
+		PluginsManager.loadedScripts.members.remove(script);
+		script.destroy();
 	}
 }
 

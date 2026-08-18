@@ -1,4 +1,4 @@
-### Reload State on ScriptedState
+### Freeplay Misses Display
 ## Change Log
 - With plugin update, the plugin is now included with the mod.
   This should make the installation process easier.

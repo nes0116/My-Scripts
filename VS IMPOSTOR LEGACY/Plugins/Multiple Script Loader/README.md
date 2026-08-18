@@ -9,6 +9,10 @@
 ### 1.0.2
 - Fixed an issue where plugins were being loaded multiple times.
   - Do not rename plugin scripts, as doing so may cause them to be loaded multiple times.
+### 1.0.3
+- Changed the way duplicate scripts are removed.
+
+  This method seems smarter lol.
 
 ## Features
 It allows multiple scripts to be executed in the current State.

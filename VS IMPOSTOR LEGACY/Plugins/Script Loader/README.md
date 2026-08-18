@@ -5,6 +5,11 @@
 ### 1.0.1
 - Fixed an issue where plugins were being loaded multiple times.
   - Do not rename plugin scripts, as doing so may cause them to be loaded multiple times.
+### 1.0.2
+- Changed the way duplicate scripts are removed.
+
+  This method seems smarter lol.
+
 ## Features
 Allows scripts to be executed through plugin commands.
 
